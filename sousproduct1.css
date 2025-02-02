@@ -1,0 +1,229 @@
+body {
+  height: 165vh;
+
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.title4 {
+  text-align: center;
+  margin-top: 170px;
+  font-family: "Segoe UI Black", sans-serif;
+  color: #7a877e;
+  font-size: 50px;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #66534d;
+  --secondary: #ccc5b9;
+}
+
+html {
+  font-size: 12px;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+
+  width: 100%;
+  padding-top: 70px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+}
+
+.product-left {
+  height: 100%;
+  width: 100%;
+  padding: 4rem 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #7a877e;
+  color: #fff;
+}
+
+.product-right {
+  background: #fff;
+  height: auto;
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-right img {
+  height: 30rem;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  margin: 0rem 0;
+  font-size: 2.5rem;
+}
+
+/* Price */
+
+.header h2 {
+  margin: 2rem 0 2rem 0;
+  font-weight: 300;
+}
+
+.btns-group {
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.product-total {
+  margin: 0rem 0 0rem 0;
+  color: white;
+}
+
+.product-total p {
+  font-weight: 700;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.product-total h3 {
+  margin: 0 0 1rem 0;
+}
+
+.product-add {
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  transition: all 0.5s ease-out;
+  margin-top: 0px;
+}
+
+.product-add:hover {
+  background-color: #fff;
+  color: #2e282a;
+}
+.product-details {
+  margin-top: 0px;
+}
+.product-btns a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot {
+  margin-top: 5px;
+}
+
+.desc-btn:checked + label,
+.desc-btn:not(:checked) + label {
+  position: relative;
+  transition: all 200ms linear;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: #ffeba7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-right: 25px;
+  opacity: 0.5;
+}
+.desc-btn:checked + label {
+  opacity: 1;
+}
+.desc-btn:not(:checked) + label:hover {
+  opacity: 0.8;
+}
+
+.desc-sec {
+  padding-top: 8px;
+  padding-bottom: 30px;
+  transition: all 250ms linear;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+.desc-sec.accor-2 {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  width: 35%;
+  z-index: 2;
+  margin-left: 47px;
+}
+#desc-1:checked ~ .desc-sec.accor-1 {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#desc-2:checked ~ .desc-sec.accor-2 {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.section-inline {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+.section-inline p span {
+  font-size: 30px;
+  line-height: 1.1;
+}
+.section-fluid p {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.accor-1 p {
+  font-size: 12px;
+}
+.accor-2 {
+  margin-top: 242px;
+}
+.section-fluid {
+  margin-left: 20px;
+}
+.sous3 {
+  margin-top: 150px;
+}
+.sous5 {
+  margin-top: 142px;
+}
+
+.bar {
+  text-decoration: line-through;
+}

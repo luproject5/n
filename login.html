@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./nav.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./foot.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html" class="nav-brand">
+        <img src="./img/IMG_8950.jpg" alt="Rozi Brand" class="brand-image" />
+      </a>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+        <!-- Menu icon -->
+      </div>
+
+      <div class="nav-middle me-auto mb-2 mb-lg-0" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./product.html">Product</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contactus.html">Contact Us</a>
+      </div>
+
+      <div class="carticon">
+        <a href="./shop.html"> <img src="./img/carticon.png" /></a>
+      </div>
+      <div class="nav-buttons">
+        <button>
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text"> <a href="./login.html">Login</a> </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="login">
+      <div class="container">
+        <form class="form" action="">
+          <p class="title">Login</p>
+          <input placeholder="Username" class="username input" type="text" />
+          <input
+            placeholder="Password"
+            class="password input"
+            type="password"
+          />
+          <button class="btn" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <footer class="foot">
+      <div class="foot-container">
+        <div class="foot-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="https://wa.me/message/LHVN4BTFRIOKA1"
+              ><img src="./img/whatsapp.jpg" alt="Whatsapp"
+            /></a>
+            <a href="https://www.instagram.com/rozie.lb?igsh=OGpodmRhM3U3MzZt"
+              ><img src="./img/insta.jpg" alt="Instagram"
+            /></a>
+            <a href="https://www.tiktok.com/@rozie.lb?_t=ZS-8sjls6GoBTc&_r=1"
+              ><img src="./img/tiktok.jpg" alt="TikTok"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2025 Rozi. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

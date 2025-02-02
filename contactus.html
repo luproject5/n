@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link href="contactus.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="foot.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html" class="nav-brand">
+        <img src="./img/IMG_8950.jpg" alt="Rozi Brand" class="brand-image" />
+      </a>
+
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+      <div class="nav-middle me-auto mb-2 mb-lg-0" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./product.html">Product</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contactus.html">Contact Us</a>
+      </div>
+
+      <div class="carticon">
+        <a href="./shop.html"> <img src="./img/carticon.png" /></a>
+      </div>
+      <div class="nav-buttons">
+        <button>
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text"> <a href="./login.html">Login</a> </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="title3">CONTACT US</div>
+    <section class="section_form">
+      <form id="consultation-form" class="feed-form">
+        <input id="name" required placeholder="Name" type="text" />
+        <input id="phone" name="phone" required placeholder="Phone number" />
+        <textarea
+          id="message"
+          name="message"
+          required
+          placeholder="Your message"
+        ></textarea>
+        <button type="submit" class="button_submit">SEND</button>
+      </form>
+    </section>
+
+    <footer class="foot">
+      <div class="foot-container">
+        <div class="foot-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="https://wa.me/message/LHVN4BTFRIOKA1">
+              <img src="./img/whatsapp.jpg" alt="Whatsapp" />
+            </a>
+            <a href="https://www.instagram.com/rozie.lb?igsh=OGpodmRhM3U3MzZt">
+              <img src="./img/insta.jpg" alt="Instagram" />
+            </a>
+            <a href="https://www.tiktok.com/@rozie.lb?_t=ZS-8sjls6GoBTc&_r=1">
+              <img src="./img/tiktok.jpg" alt="TikTok" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2025 Rozi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show");
+      }
+
+      // Handle form submission
+      document
+        .getElementById("consultation-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          var name = document.getElementById("name").value;
+          var phone = document.getElementById("phone").value;
+          var message = document.getElementById("message").value;
+
+          var whatsappMessage = `Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
+          var whatsappURL = `https://wa.me/96181791764?text=${whatsappMessage}`; // Replace with your WhatsApp number
+
+          // Redirect to WhatsApp with the message
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
+  </body>
+</html>

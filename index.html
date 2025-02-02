@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rozi</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <link href="nav.css" rel="stylesheet" />
+    <link href="foot.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+  </head>
+  <body class="home">
+    <nav>
+      <a href="./index.html" class="nav-brand">
+        <img src="./img/IMG_8950.jpg" alt="Rozi Brand" class="brand-image" />
+      </a>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+        <!-- Menu icon -->
+      </div>
+
+      <div class="nav-middle me-auto mb-2 mb-lg-0" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./product.html">Product</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contactus.html">Contact Us</a>
+      </div>
+
+      <div class="carticon">
+        <a href="./shop.html"> <img src="./img/carticon.png" /></a>
+      </div>
+      <div class="nav-buttons">
+        <button>
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text"> <a href="./login.html">Login</a> </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="text-image-container">
+      <div class="text-container">
+        <p>
+          <b> Natural and Organic Approach to Beauty. </b>
+        </p>
+
+        <p>Curated with Precision.</p>
+        <p>
+          Pure, natural ingredients for hair that radiates health and elegance.
+        </p>
+        <a href="./product.html"> <button class="b">VIEW SHOP</button></a>
+      </div>
+
+      <div class="image-container">
+        <img src="./img/IMG-20241230-WA0170.jpg" class="product-image" />
+      </div>
+    </div>
+    <div class="title">OUR BEST SELLER</div>
+    <!-- video 1 -->
+    <div class="text-video1-container">
+      <div class="video1-container">
+        <video src="./video/video1.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="text1">
+        ROZI HAIR SPRAY A 100% organic and natural hair spray designed to
+        nourish and revitalize your hair. Expertly formulated to hydrate and
+        rejuvenate, this luxurious spray is infused with the pure essence of
+        rosemary, sage, and other organic botanicals. It effortlessly promotes
+        healthier, shinier, and more manageable hair with every use. With
+        consistent use, your hair will feel refreshed, smooth, and full of life.
+        Noticeable results begin within 2 weeks, with transformative benefits
+        visible after 1 month.
+      </div>
+    </div>
+    <div class="text-video2-container">
+      <!-- video 2 -->
+      <div class="text2">
+        ROZI HAIR MASK A luxurious, 100% organic and natural hair mask that
+        deeply nourishes and restores your hair. Infused with the finest
+        rosemary, jojoba, and a blend of natural oils, this mask provides
+        intense hydration, leaving your hair softer, shinier, and more vibrant.
+        Visible improvements can be seen after just 1-2 uses, and with regular
+        application, you’ll experience a complete transformation. Say goodbye to
+        split ends and hello to silky, healthy hair in just 1 month.
+      </div>
+      <div class="video2-container">
+        <video src="./video/video2.mp4" autoplay muted loop controls></video>
+      </div>
+    </div>
+
+    <section>
+      <div class="sale-container">
+        <div class="sale-content">
+          <div>
+            <span class="sale-subtitle">Weekend offer</span>
+            <br />
+            <span class="sale-title">20% off the products</span>
+          </div>
+          <a href="./sousproduct3.html">
+            <button class="sale-button">
+              Buy Now
+              <svg
+                viewBox="0 0 256 256"
+                height="1em"
+                width="1em"
+                class="button-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32Z"
+                  fill="currentColor"
+                ></path>
+              </svg></button
+          ></a>
+        </div>
+      </div>
+    </section>
+    <div style="text-align: center;">Customer Reviews</h1>
+
+      <div class="review-container">
+          <span class="customer-name">John Doe</span>  
+          <span class="stars">★★★★★</span>
+          <p class="review-text">"Absolutely love this product! Worth every penny."</p>
+      </div>
+  
+      <div class="review-container">
+          <span class="customer-name">Sarah Brown</span>  
+          <span class="stars">★★★★☆</span>
+          <p class="review-text">"Really good, but the delivery took a bit longer than expected."</p>
+      </div>
+  
+      <div class="review-container">
+          <span class="customer-name">Michael Smith</span>  
+          <span class="stars">★★★☆☆</span>
+          <p class="review-text">"The product is decent, but I expected better quality for the price."</p>
+      </div>
+  
+      <div class="review-container">
+          <span class="customer-name">Emily Johnson</span>  
+          <span class="stars">★★★★★</span>
+          <p class="review-text">"Best purchase I've made! I would definitely buy it again."</p>
+      </div>
+  <!-- Feedback Form Section -->
+  <div class="feedback-form">
+    <h2>Submit Your Feedback</h2>
+    <form id="feedbackForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="stars">Rating:</label>
+        <select id="stars" name="stars" required>
+            <option value="★★★★★">★★★★★</option>
+            <option value="★★★★☆">★★★★☆</option>
+            <option value="★★★☆☆">★★★☆☆</option>
+            <option value="★★☆☆☆">★★☆☆☆</option>
+            <option value="★☆☆☆☆">★☆☆☆☆</option>
+        </select>
+  
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" rows="4" required></textarea>
+  
+        <button type="submit">Submit Review</button>
+    </form>
+  </div>
+    <footer class="foot">
+      <div class="foot-container">
+        <div class="foot-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="https://wa.me/message/LHVN4BTFRIOKA1"
+              ><img src="./img/whatsapp.jpg" alt="Whatsapp"
+            /></a>
+            <a href="https://www.instagram.com/rozie.lb?igsh=OGpodmRhM3U3MzZt"
+              ><img src="./img/insta.jpg" alt="Instagram"
+            /></a>
+            <a href="https://www.tiktok.com/@rozie.lb?_t=ZS-8sjls6GoBTc&_r=1"
+              ><img src="./img/tiktok.jpg" alt="TikTok"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2025 Rozi. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+    <script src="rev.js">
+
+    </script>
+  </body>
+</html>

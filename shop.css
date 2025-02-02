@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+.title4 {
+  text-align: center;
+  margin: 7%;
+  font-family: "Segoe UI Black", sans-serif;
+  color: #7a877e;
+  font-size: 50px;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+  background-image: url(./img/producte.jpg);
+}
+hr {
+  border: none;
+  background: #e0e4cc;
+  height: 1px;
+  /*   width:60%;
+  display:block;
+  margin-left:0; */
+}
+.container {
+  max-width: 100%;
+  margin: 1em auto;
+
+  padding: 30px;
+  border-radius: 5px;
+}
+.productcont {
+  display: flex;
+}
+.product {
+  padding: 1em;
+  border: 1px solid #e0e4cc;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+.cart-container {
+  border: 1px solid #e0e4cc;
+  border-radius: 5px;
+  margin-top: 1em;
+  padding: 1em;
+}
+button,
+input[type="submit"] {
+  border: 1px solid #7a877e;
+  color: #fff;
+  background: #7a877e;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  line-height: 1;
+  border-radius: 1.2em;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+button:hover,
+button:focus,
+button:active,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:active {
+  background: #a7dbd8;
+  border-color: #69d2e7;
+  color: #000;
+  cursor: pointer;
+}
+table {
+  margin-bottom: 1em;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  text-align: left;
+  padding: 0.25em 1em;
+  border-bottom: 1px solid #e0e4cc;
+}
+#carttotals {
+  margin-right: 0;
+  margin-left: auto;
+}
+.cart-buttons {
+  width: auto;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+}
+#emptycart {
+  margin-right: 1em;
+}
+table td:nth-last-child(1) {
+  text-align: right;
+}
+.message {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #7a877e;
+  color: #7a877e;
+  padding: 0.5em 0;
+  margin: 1em 0;
+}
+img {
+  width: 10rem;
+  height: 10rem;
+}
+.arrowt {
+  width: 48px;
+  height: 48px;
+  margin-right: 95%;
+  margin-top: 2%;
+}
+/* For phones (width less than 768px) */
+@media (max-width: 768px) {
+  .title4 {
+    font-size: 30px; /* Smaller font size for mobile screens */
+    margin: 5%;
+  }
+
+  .productcont {
+    flex-direction: column; /* Stack products vertically on small screens */
+    align-items: center; /* Center align product cards */
+  }
+
+  .product {
+    flex: 1 1 100%; /* Each product takes full width */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 1rem; /* Space between products */
+  }
+
+  img {
+    width: 8rem; /* Smaller images for better mobile viewing */
+    height: 8rem;
+  }
+
+  .cart-container {
+    padding: 1em;
+    margin-top: 1em;
+  }
+
+  .arrowt {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%; /* Adjust arrow icon for smaller screens */
+  }
+
+  .cart-buttons {
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center; /* Center align buttons */
+  }
+
+  button,
+  input[type="submit"] {
+    width: 100%; /* Make buttons full width on small screens */
+    margin-top: 0.5em;
+  }
+
+  table td,
+  table th {
+    font-size: 14px; /* Smaller text for tables on mobile */
+  }
+}
+
+/* For iPad or Tablets (width between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title4 {
+    font-size: 40px; /* Adjust font size for tablet */
+    margin: 6%;
+  }
+
+  .productcont {
+    flex-wrap: wrap; /* Allow wrapping for tablet screens */
+    justify-content: space-around; /* Evenly space products */
+  }
+
+  .product {
+    flex: 1 1 45%; /* Two products per row on iPad */
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 9rem; /* Slightly larger images on tablet */
+    height: 9rem;
+  }
+
+  .cart-container {
+    padding: 1.5em;
+  }
+
+  .arrowt {
+    width: 45px;
+    height: 45px;
+    margin-right: 90%;
+  }
+
+  .cart-buttons {
+    flex-direction: row; /* Horizontal buttons for iPad */
+    justify-content: space-between;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 48%; /* Make buttons take up less width for tablet */
+    margin-top: 0;
+  }
+
+  table td,
+  table th {
+    font-size: 16px; /* Slightly larger text for iPad */
+  }
+}

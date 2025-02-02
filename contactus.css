@@ -1,0 +1,149 @@
+body {
+  height: 100vh;
+  background-color: #f1ebdf;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url(./img/producte.jpg);
+}
+.title3 {
+  text-align: center;
+  margin-top: 170px;
+  font-family: "Segoe UI Black", sans-serif;
+  color: #7a877e;
+  font-size: 50px;
+}
+.feed-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.feed-form input,
+.feed-form textarea {
+  height: 54px;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 15px;
+  border: none;
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: inherit;
+  color: #4b4b4b;
+}
+
+.feed-form textarea {
+  height: 100px;
+  resize: none;
+  padding: 10px 20px;
+}
+.feed-form input::placeholder,
+.feed-form textarea::placeholder {
+  color: #999;
+}
+
+.button_submit:hover,
+.feed-form input:hover,
+.feed-form textarea:hover {
+  transform: scale(1.009);
+  box-shadow: 0px 0px 3px 0px #212529;
+}
+
+.button_submit {
+  width: 100%;
+  height: 54px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+  background: #7a877e;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+.foot {
+  margin-top: 50px;
+}
+.section_form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+@media (max-width: 768px) {
+  /* Adjust title */
+  .title3 {
+    font-size: 35px;
+    margin-top: 120px;
+  }
+
+  /* Adjust form width */
+  .feed-form {
+    width: 80%;
+  }
+
+  /* Adjust input fields */
+  .feed-form input,
+  .feed-form textarea {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  /* Adjust button */
+  .button_submit {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  /* Adjust form margin */
+  .feed-form {
+    margin-top: 30px;
+  }
+
+  /* Adjust footer margin */
+  .foot {
+    margin-top: 30px;
+  }
+}
+
+/* Media Query for iPads */
+@media (max-width: 1024px) {
+  /* Adjust title */
+  .title3 {
+    font-size: 40px;
+    margin-top: 150px;
+  }
+
+  /* Adjust form width */
+  .feed-form {
+    width: 60%;
+  }
+
+  /* Adjust input fields */
+  .feed-form input,
+  .feed-form textarea {
+    height: 52px;
+    font-size: 15px;
+  }
+
+  /* Adjust button */
+  .button_submit {
+    height: 52px;
+    font-size: 15px;
+  }
+
+  /* Adjust form margin */
+  .feed-form {
+    margin-top: 40px;
+  }
+
+  /* Adjust footer margin */
+  .foot {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="shop.css" rel="stylesheet" />
+    <title>shop</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+  </head>
+  <body>
+    <a href="./index.html"><img class="arrowt" src="./img/arrow.png" /></a>
+    <div class="container">
+      <div class="title4">SHOP</div>
+
+      <p></p>
+
+      <div id="alerts"></div>
+      <div class="productcont">
+        <div class="product">
+          <p class="productname">Evergreen Shampoo</p>
+          <a href="./sousproduct.html"> <img src="./img/shampo1.jpg" /></a>
+          <p class="price">$6.99</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <p class="productname">Shine Shampoo</p>
+          <a href="./sousproduct1.html"> <img src="./img/shampo2.jpg" /></a>
+          <p class="price">$6.99</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <p class="productname">Radiance Shampoo</p>
+          <a href="./sousproduct2.html"> <img src="./img/shampo3.jpg" /></a>
+          <p class="price">$6.99</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <p class="productname">Hydrating Hair Serum</p>
+          <a href="./sousproduct3.html"> <img src="./img/serum.jpg" /></a>
+          <p class="price">$9.99</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <p class="productname">Soie Hair Mask</p>
+          <a href="./sousproduct4.html"> <img src="./img/hairmask.jpg" /></a>
+          <p class="price">$11.99</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <p class="productname">Organic Hair Spray</p>
+          <a href="./sousproduct5.html"> <img src="./img/hairspray.jpg" /></a>
+          <p class="price">$4.99</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <p class="productname">Rozi Scalp Massager</p>
+          <a href="./sousproduct6.html">
+            <img src="./img/sclapemassager.jpg"
+          /></a>
+          <p class="price">$2.99</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="cart-container">
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+          </thead>
+          <tbody id="carttable"></tbody>
+        </table>
+        <hr />
+        <table id="carttotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsquantity">0</span></td>
+
+            <td>$<span id="total">0</span></td>
+          </tr>
+        </table>
+
+        <div class="cart-buttons">
+          <button id="emptycart">Empty Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <script src="shop.js"></script>
+  </body>
+</html>

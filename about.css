@@ -1,0 +1,108 @@
+body {
+  height: 190vh;
+  background-color: #f1ebdf;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url(./img/producte.jpg);
+}
+.title2 {
+  text-align: center;
+  margin-top: 170px;
+  font-family: "Segoe UI Black", sans-serif;
+  color: #7a877e;
+  font-size: 50px;
+}
+.text5 {
+  width: 70%;
+  padding-top: 50px;
+  font-family: "Playfair Display", serif;
+  color: #7a877e;
+  font-size: 21.5px;
+  line-height: 1.7;
+  padding-left: 250px;
+}
+.image12 {
+  gap: 3px;
+  display: flex;
+}
+.image12 img {
+  height: 700px;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+.about foote r {
+  margin-top: 200px;
+}
+
+/* For iPads (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .title2 {
+    font-size: 40px;
+    margin-top: 120px;
+  }
+
+  .text5 {
+    width: 80%;
+    padding-left: 100px;
+    font-size: 18px;
+  }
+
+  .image12 img {
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+}
+
+/* For Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .title2 {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+
+  .text5 {
+    width: 90%;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .image12 {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+  }
+
+  .image12 img {
+    height: auto; /* Allow images to resize based on width */
+    width: 80%; /* Make images take up 80% of the screen width */
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .about footer {
+    margin-top: 100px;
+  }
+}
+
+/* For Smaller Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .title2 {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+
+  .text5 {
+    width: 95%;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .image12 img {
+    width: 90%; /* Make images take up 90% of the screen width */
+    margin-top: 15px;
+  }
+}
